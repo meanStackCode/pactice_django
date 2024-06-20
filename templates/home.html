@@ -1,0 +1,11 @@
+<h1>WordCount Page</h1>
+Welcome to WordCount Website
+<br>
+<h2><a href="{% url 'about' %}">Go to About Page</a></h2>
+<br>
+{{name}}
+<form action="{% url 'count' %}">
+    <textarea name ='fulltextarea' cols=40 rows=10></textarea>
+    <br>
+    <input type="submit" value="Count"/>
+</form>
